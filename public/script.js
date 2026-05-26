@@ -1,15 +1,7 @@
-/* ===================================================
-   DSA INSTRUCTOR — Main Script
-   JWT Auth + GSAP Animations + Chat Logic
-   =================================================== */
 
-// --- GLOBALS ---
 const JWT_TOKEN_KEY = "dsa_jwt_token";
 let currentUser = null;
 
-// ===================================================
-// 1. APP INITIALIZATION
-// ===================================================
 async function initApp() {
   // Check if user has valid token
   const token = localStorage.getItem(JWT_TOKEN_KEY);
@@ -38,9 +30,6 @@ async function initApp() {
   handleAuthState(false);
 }
 
-// ===================================================
-// 2. AUTH STATE HANDLER
-// ===================================================
 function handleAuthState(isAuthenticated) {
   const landingPage = document.getElementById("landing-page");
   const appContainer = document.getElementById("app-container");
@@ -89,9 +78,7 @@ function handleAuthState(isAuthenticated) {
   }
 }
 
-// ===================================================
-// 3. AUTH BUTTON BINDINGS
-// ===================================================
+
 function bindAuthButtons() {
   const signInBtns = [
     document.getElementById("nav-signin-btn"),
@@ -260,12 +247,9 @@ function logout() {
   handleAuthState(false);
 }
 
-// ===================================================
-// 4. GSAP LANDING PAGE ANIMATIONS
-// ===================================================
 function runLandingAnimations() {
   if (typeof gsap === "undefined") {
-    console.warn("⚠️ GSAP is not loaded. Showing elements immediately.");
+    console.warn("GSAP is not loaded. Showing elements immediately.");
     const selectors = [
       "#hero-title",
       "#hero-subtitle",

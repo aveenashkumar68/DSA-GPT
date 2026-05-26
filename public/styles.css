@@ -1,8 +1,3 @@
-/* ===================================================
-   DSA INSTRUCTOR — Premium Dark Theme
-   Colors: Black, Charcoal, Grey, White Accent
-   =================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 /* --- CSS Variables --- */
@@ -605,7 +600,7 @@ a {
 .footer-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-logo {
