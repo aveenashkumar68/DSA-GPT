@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Instructor — Master Data Structures & Algorithms for Free</title>
+  <meta name="description" content="DSA Instructor is a free AI-powered chatbot that helps you master Data Structures and Algorithms. Get instant explanations, code walkthroughs, and practice problems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== LANDING PAGE ===================== -->
+  <div id="landing-page">
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <span class="nav-logo-icon">⚡</span>
+          <span>DSA Instructor</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+        </div>
+        <div class="nav-auth" id="nav-auth-buttons"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title" id="hero-title">
+          Master <span class="gradient-text">DSA</span><br />Like a Pro.
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle">
+          Your AI-powered Data Structures & Algorithms instructor. Get instant explanations,
+          code walkthroughs, and step-by-step guidance — completely free.
+        </p>
+        <div class="hero-actions" id="hero-actions">
+          <button class="btn btn-primary" id="hero-signup-btn">
+            Get Started — It's Free
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Free Messages</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Always Available</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">AI</span>
+            <span class="stat-label">Powered by Gemini</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Terminal Preview -->
+      <div class="hero-terminal" id="hero-terminal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="terminal-title">DSA Instructor Chat</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line terminal-line-user">
+            <span class="terminal-prompt">You →</span>
+            <span class="terminal-text" id="terminal-user-text"></span>
+            <span class="terminal-cursor">|</span>
+          </div>
+          <div class="terminal-line terminal-line-bot" id="terminal-bot-line" style="opacity: 0;">
+            <span class="terminal-prompt terminal-prompt-bot">AI →</span>
+            <span class="terminal-text" id="terminal-bot-text"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag" id="features-tag">Features</span>
+          <h2 class="section-title" id="features-title">Everything You Need to Ace DSA</h2>
+          <p class="section-subtitle" id="features-subtitle">
+            Built for students, by developers. Get the tools you need without paying a dime.
+          </p>
+        </div>
+        <div class="features-grid" id="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3>Instant Explanations</h3>
+            <p>Ask any DSA concept and get clear, detailed explanations with examples in seconds.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🧮</div>
+            <h3>Algorithm Walkthroughs</h3>
+            <p>Step-by-step breakdowns of sorting, searching, graph algorithms, and dynamic programming.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔗</div>
+            <h3>Data Structure Deep Dives</h3>
+            <p>Master arrays, linked lists, trees, heaps, graphs, hash maps, and more with interactive guidance.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Complexity Analysis</h3>
+            <p>Understand time and space complexity for every solution. Learn to optimize like a pro.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Code Generation</h3>
+            <p>Get working code implementations in your preferred language — C++, Java, Python, JS, and more.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Interview Prep</h3>
+            <p>Practice common FAANG interview questions with AI-guided hints and optimal solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag" id="hiw-tag">How It Works</span>
+          <h2 class="section-title" id="hiw-title">Start Learning in 3 Steps</h2>
+        </div>
+        <div class="steps-grid" id="steps-grid">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Create a Free Account</h3>
+            <p>Sign up in seconds. No payment, no credit card, no catch. Just pure learning.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Ask Your Question</h3>
+            <p>Type any DSA question — from "What is a binary tree?" to "Solve the knapsack problem."</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Learn & Master</h3>
+            <p>Get instant, detailed responses. Keep asking follow-ups until you fully understand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta-section">
+      <div class="section-inner">
+        <div class="cta-box" id="cta-box">
+          <h2>Ready to Master DSA?</h2>
+          <p>Join thousands of students learning Data Structures & Algorithms for free.</p>
+          <button class="btn btn-primary btn-lg" id="cta-signup-btn">
+            Start Learning Now — Free Forever
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-inner">
+        <div class="footer-inner">
+          <p>Built with ❤️ for students everywhere.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ===================== CLERK MODAL OVERLAY ===================== -->
+  <div id="clerk-overlay" class="clerk-overlay" style="display:none;">
+    <div class="clerk-overlay-bg" id="clerk-overlay-bg"></div>
+    <div class="clerk-modal" id="clerk-mount-point"></div>
+  </div>
+
+  <!-- ===================== CHAT APP ===================== -->
+  <div id="app-container" class="app-container" style="display: none;">
+    <div class="container">
+      <div class="chat-header">
+        <div class="header-content">
+          <h1>⚡ DSA Instructor</h1>
+          <p>Your AI-powered DSA Guide</p>
+        </div>
+        <div id="user-button-container" class="user-button-container"></div>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+          <div class="message-content">
+            <p>
+              👋 Hello! I'm your DSA Instructor. Ask me anything about Data
+              Structures and Algorithms. I'm here to help you learn!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input-section">
+        <form id="chatForm" class="chat-form">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Ask about DSA, algorithms, data structures..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="sendBtn" class="send-btn">
+            <span>Send</span>
+            <span class="send-icon">➤</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- App Script -->
+  <script src="script.js"></script>
+</body>
+</html>
