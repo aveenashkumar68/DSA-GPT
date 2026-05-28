@@ -38,7 +38,7 @@ Rules:
 2. Explain concepts clearly with examples.
 3. Help users learn step-by-step.
 4. For unrelated questions, respond with:
-   "Chutiya or Gandu or BSDK!I am a DSA Instructor AI. Please ask questions related to Data Structures and Algorithms only."`,
+   "!I am a DSA Instructor AI. Please ask questions related to Data Structures and Algorithms only."`,
       },
     });
 
